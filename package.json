@@ -1,0 +1,30 @@
+{
+  "name": "react-set-state",
+  "version": "0.0.1",
+  "description": "React component which giving you the ability to control state",
+  "main": "index.js",
+  "scripts": {
+    "cp": "cp ./index.js example/src/react-set-state.js",
+    "deploy": "babel src/index.js --out-file ./index.js",
+    "server": "http-server example/ -p 8888",
+    "watch:js": "watchify example/src/index.js -t babelify -o example/bundle.js -dv",
+    "dev": "npm run watch:js & npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wwayne/react-set-state.git"
+  },
+  "author": "wayne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wwayne/react-set-state/issues"
+  },
+  "homepage": "https://github.com/wwayne/react-set-state",
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "babelify": "^6.1.2",
+    "http-server": "^0.8.0",
+    "react": "^0.13.3",
+    "watchify": "^3.2.1"
+  }
+}
