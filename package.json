@@ -1,10 +1,10 @@
-{
-  "name": "react-set-state",
+  {
+  "name": "react-state-store",
   "version": "0.0.1",
   "description": "React component which giving you the ability to control state",
   "main": "index.js",
   "scripts": {
-    "cp": "cp ./index.js example/src/react-set-state.js",
+    "cp": "cp ./index.js example/src/react-state-store.js",
     "deploy": "babel src/index.js --out-file ./index.js",
     "server": "http-server example/ -p 8888",
     "watch:js": "watchify example/src/index.js -t babelify -o example/bundle.js -dv",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wwayne/react-set-state.git"
+    "url": "https://github.com/wwayne/react-state-store.git"
   },
   "author": "wayne",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wwayne/react-set-state/issues"
+    "url": "https://github.com/wwayne/react-state-store/issues"
   },
-  "homepage": "https://github.com/wwayne/react-set-state",
+  "homepage": "https://github.com/wwayne/react-state-store",
   "devDependencies": {
     "babel": "^5.4.7",
     "babelify": "^6.1.2",

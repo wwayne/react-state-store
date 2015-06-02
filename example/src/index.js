@@ -1,6 +1,6 @@
 'use strict';
 
-import SetState from "./react-set-state";
+import StateStore from "./react-state-store";
 import React from "react";
 
 class Index extends React.Component {
@@ -14,14 +14,16 @@ class Index extends React.Component {
   }
 
   click() {
-    SetState.setState({
-      number: 12
+    StateStore.set({
+      string: "wangzixiao",
+      number: 10
+    }, "title");
+    StateStore.set({
+      string: "wzx"
     })
     setTimeout(() => {
-      SetState.setState({
-        string: "wangzixiao"
-      }, this);
-    }, 2000);
+      this.setState(StateStore.getAll());
+    }, 1000);
   }
 
   render() {
