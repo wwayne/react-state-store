@@ -36,7 +36,7 @@ import SetStore from "react-state-store"
 
 ### Method
 
-##### set(state, alias)
+#### set(state, alias)
 Set(store) some state into StateStore, the function will give you an unique id so that you can get them by `get(id)`, you can also set alias so that you can use `get(alias)` to get them.
 
 Params:
@@ -49,7 +49,7 @@ Return:
 * id or alias
 
 
-##### get(id)
+#### get(id)
 Get specific state stored before, then this state will be removed from StateStore
 
 Params:
@@ -61,16 +61,16 @@ Return:
 * state object
 
 
-##### getAll()
+#### getAll()
 Get all state stored, then this function will remove all state stored in the StateStore 
 
 Return:
 
 * state object
 
-##### remove(id)
+#### remove(id)
 Remove specific state in StateStore
-##### removeAll()
+#### removeAll()
 Remove all state in StateStore
 
 ### Example
